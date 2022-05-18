@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Form Test</title>
+        <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Venue Portal</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <label for="partner_key">Partner Key:</label><br>
+            <input type="text" id="partner_key" name="partner_key"><br>
+            <label for="secret_key">Secret Key:</label><br>
+            <input type="text" id="secret_key" name="secret_key"><br>
+            <label for="tags">Tags:</label><br>
+            <input type="text" id="tags" name="tags"><br>
+            <label for="first_name">Firstname:</label><br>
+            <input type="text" id="first_name" name="first_name"><br>
+            <label for="last_name">Lastname:</label><br>
+            <input type="text" id="last_name" name="last_name"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br><br>
+            <label class="form-label" for="resume_file">Upload Resume: </label>
+            <input type="file" name="resume_file" id="resume_file" required><br><br>
+        
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
