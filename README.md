@@ -17,7 +17,8 @@ Now install the dependencies for the project:
 You should now be able to run the API with:  
 `uvicorn app:app`
 
-To Test with cURL:
+To Test with cURL(Route @ http://127.0.0.1:8000/formtest):
 
-    curl --location --request POST 'http://127.0.0.1:8000/ --form 'partner_key=""' --form 'secret_key=""' --form 'tags=""' --form 'first_name=""' --form 'last_name=""' --form 'email=""' --form 'resume_file=@"/path/to/file"'
+
+    curl --location --request POST 'http://127.0.0.1:8000/formtest --form 'partner_key=""' --form 'secret_key=""' --form 'tags=""' --form 'first_name=""' --form 'last_name=""' --form 'email=""' --form 'resume_file=@"/path/to/file"'
 
